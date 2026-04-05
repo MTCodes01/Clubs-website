@@ -56,7 +56,7 @@ body {
 .bg-teal {
   width: 400px;
   height: 400px;
-  background: #00d4ff;
+  background: #008bff;
   top: -100px;
   left: -100px;
   animation-delay: -2s;
@@ -65,7 +65,7 @@ body {
 .bg-purple {
   width: 350px;
   height: 350px;
-  background: #bd00ff;
+  background: #960f70;
   bottom: -100px;
   right: -100px;
   animation-delay: -7s;
@@ -123,7 +123,7 @@ body {
   right: -4px;
   bottom: -4px;
   left: -4px;
-  background: linear-gradient(45deg, #00d4ff, #bd00ff, #00d4ff);
+  background: linear-gradient(45deg, #008bff, #960f70, #008bff);
   background-size: 200% 200%;
   border-radius: 50%;
   z-index: -1;
@@ -145,6 +145,7 @@ body {
   letter-spacing: -0.5px;
   background: linear-gradient(to right, #fff, #cbd5e1);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -352,6 +353,33 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* Site Footer */
+.site-footer {
+  margin-top: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.site-footer a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.site-footer a.train-link:hover {
+  color: #008bff;
+  text-shadow: 0 0 8px rgba(0, 139, 255, 0.6);
+}
+
+.site-footer a.deploy-link:hover {
+  color: #960f70;
+  text-shadow: 0 0 8px rgba(150, 15, 112, 0.6);
 }
 
 /* Responsive constraints */
