@@ -34,6 +34,62 @@
     <meta name="apple-mobile-web-app-title" content="CEAL Clubs" />
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@id": "https://ceal.in/#organization",
+          "@type": "CollegeOrUniversity",
+          "name": "College of Engineering Attingal",
+          "alternateName": "CEAL",
+          "url": "https://ceal.in/",
+          "logo": "https://ceal.in/web-app-manifest-512x512.png",
+          "sameAs": [
+            "https://www.ceattingal.ac.in/"
+          ],
+          "subOrganization": [
+            {
+              "@type": "Organization",
+              "name": "FOSS Cell CEAL",
+              "url": "https://foss.ceal.in"
+            },
+            {
+              "@type": "Organization",
+              "name": "IEEE Student Branch CEAL",
+              "url": "https://ieee.ceal.in"
+            },
+            {
+              "@type": "Organization",
+              "name": "Alchemy IEDC CEAL",
+              "url": "https://iedc.ceal.in"
+            },
+            {
+              "@type": "Organization",
+              "name": "ISTE CEAL",
+              "url": "https://iste.ceal.in"
+            },
+            {
+              "@type": "Organization",
+              "name": "TinkerHub CEAL",
+              "url": "https://tinkerhub.ceal.in"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ceal.in/#website",
+          "url": "https://ceal.in/",
+          "name": "CEAL Clubs",
+          "publisher": {
+            "@id": "https://ceal.in/#organization"
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
